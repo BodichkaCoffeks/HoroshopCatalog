@@ -1,12 +1,13 @@
 (function() {
-    console.log("Каталог: Скрипт активовано, чекаю на блок...");
+    console.log("Каталог: Скрипт активовано, шукаю секцію категорій...");
 
     // Основна функція заміни
     function replaceCatalog() {
-        const horoshopGrid = document.querySelector('.categories-grid.__normalGrid');
+        // Тепер шукаємо саме батьківську секцію, яка містить весь блок категорій
+        const targetSection = document.querySelector('section.categories.__bigIcons');
         
-        if (horoshopGrid && !document.querySelector('.my-custom-catalog-panel')) {
-            console.log("Блок знайдено, виконую заміну!");
+        if (targetSection && !document.querySelector('.my-custom-catalog-panel')) {
+            console.log("Секцію категорій знайдено, виконую заміну!");
             
             const myCustomBlock = document.createElement('div');
             myCustomBlock.className = 'my-custom-catalog-panel';
@@ -130,15 +131,14 @@
                 </style>
             `;
             
-            horoshopGrid.parentNode.replaceChild(myCustomBlock, horoshopGrid);
-            observer.disconnect(); // Вимикаємо спостерігач після успіху
+            // Замінюємо цілу секцію на ваш блок
+            targetSection.parentNode.replaceChild(myCustomBlock, targetSection);
+            observer.disconnect();
         }
     }
 
-    // Запуск спостерігача
     const observer = new MutationObserver(replaceCatalog);
     observer.observe(document.body, { childList: true, subtree: true });
     
-    // Спроба заміни відразу
     replaceCatalog();
 })();
