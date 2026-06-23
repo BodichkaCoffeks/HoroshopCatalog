@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a href="https://dressetogether.com.ua/dlia-cholovikiv/1103/" class="custom-catalog-card">
                     <div class="card-image-wrapper">
                         <!-- Замініть шлях на реальне посилання на картинку -->
-                        <img src="Cholovik.jpg" alt="Чоловіча білизна" class="card-img">
+                        <img src="https://github.com/BodichkaCoffeks/HoroshopCatalog/blob/main/Cholovik.jpg?raw=true" alt="Чоловіча білизна" class="card-img">
                     </div>
                     <div class="card-text-wrapper">
                         <span class="card-title">Чоловіча білизна</span>
