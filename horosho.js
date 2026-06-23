@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a href="https://dressetogether.com.ua/rozdrib/1126/" class="custom-catalog-card">
                     <div class="card-image-wrapper">
                         <!-- Замініть шлях на реальне посилання на картинку -->
-                        <img src="Rozdrib.png" alt="Роздріб" class="card-img">
+                        <img src="https://github.com/BodichkaCoffeks/HoroshopCatalog/blob/main/Rozdrib.png?raw=true" alt="Роздріб" class="card-img">
                     </div>
                     <div class="card-text-wrapper">
                         <span class="card-title">Роздріб</span>
