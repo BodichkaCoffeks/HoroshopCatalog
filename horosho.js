@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a href="https://dressetogether.com.ua/dlia-zhinok/" class="custom-catalog-card">
                     <div class="card-image-wrapper">
                         <!-- Замініть шлях на реальне посилання на картинку -->
-                        <img src="Zinka.png" alt="Жіноча білизна" class="card-img">
+                        <img src="https://github.com/BodichkaCoffeks/HoroshopCatalog/blob/main/Zinka.png?raw=true" alt="Жіноча білизна" class="card-img">
                     </div>
                     <div class="card-text-wrapper">
                         <span class="card-title">Жіноча білизна</span>
